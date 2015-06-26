@@ -1,6 +1,6 @@
 {
   "name": "random-float",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Generate a random float",
   "license": "MIT",
   "repository": "sindresorhus/random-float",
