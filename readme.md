@@ -51,6 +51,7 @@ Maximum float to return.
 ## Related
 
 - [random-int](https://github.com/sindresorhus/random-int) - Generate a random integer
+- [random-boolean](https://github.com/arthurvr/random-boolean) - Get a random boolean
 - [random-item](https://github.com/sindresorhus/random-item) - Get a random item from an array
 - [random-obj-key](https://github.com/sindresorhus/random-obj-key) - Get a random key from an object
 - [random-obj-prop](https://github.com/sindresorhus/random-obj-prop) - Get a random property from an object
