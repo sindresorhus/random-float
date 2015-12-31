@@ -1,37 +1,29 @@
-'use strict';
-var test = require('ava');
-var numberIsFloat = require('number-is-float');
-var inRange = require('in-range');
-var stableFn = require('stable-fn');
-var fn = require('./');
+import test from 'ava';
+import numberIsFloat from 'number-is-float';
+import inRange from 'in-range';
+import stableFn from 'stable-fn';
+import fn from './';
 
 function fn2(min, max) {
-	return stableFn(function () {
-		return inRange(fn(min, max), min, max);
-	});
+	return stableFn(() => inRange(fn(min, max), min, max));
 }
 
-test(function (t) {
-	t.assert(numberIsFloat(fn(0, 10)));
-	t.assert(!stableFn(function () {
-		return fn(1);
-	}));
-	t.assert(stableFn(function () {
-		return inRange(fn(1), 0, 1);
-	}));
-	t.assert(inRange(fn(1), 0, 1));
-	t.assert(fn2(0, 0.1));
-	t.assert(fn2(0, 1));
-	t.assert(fn2(0, 2));
-	t.assert(fn2(0, 10));
-	t.assert(fn2(0, 100));
-	t.assert(fn2(0, 0));
-	t.assert(fn2(0, 1));
-	t.assert(fn2(0, 2));
-	t.assert(fn2(0, 10));
-	t.assert(fn2(0, 100));
-	t.assert(fn2(5, 10));
-	t.assert(fn2(524234213, 99999999999));
-	t.assert(fn2(-10, -5));
-	t.end();
+test(t => {
+	t.true(numberIsFloat(fn(0, 10)));
+	t.false(stableFn(() => fn(1)));
+	t.true(stableFn(() => inRange(fn(1), 0, 1)));
+	t.true(inRange(fn(1), 0, 1));
+	t.true(fn2(0, 0.1));
+	t.true(fn2(0, 1));
+	t.true(fn2(0, 2));
+	t.true(fn2(0, 10));
+	t.true(fn2(0, 100));
+	t.true(fn2(0, 0));
+	t.true(fn2(0, 1));
+	t.true(fn2(0, 2));
+	t.true(fn2(0, 10));
+	t.true(fn2(0, 100));
+	t.true(fn2(5, 10));
+	t.true(fn2(524234213, 99999999999));
+	t.true(fn2(-10, -5));
 });
