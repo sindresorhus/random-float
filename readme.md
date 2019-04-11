@@ -6,14 +6,14 @@
 ## Install
 
 ```
-$ npm install --save random-float
+$ npm install random-float
 ```
 
 
 ## Usage
 
 ```js
-var randomFloat = require('random-float');
+const randomFloat = require('random-float');
 
 randomFloat(5);
 //=> 4.401887938147411
@@ -25,24 +25,24 @@ randomFloat(10, 100);
 
 ## API
 
-### randomFloat(max)
+### randomFloat([maximumValue])
 
-Returns an float from `0` to `max`.
+Returns an float from `0` to `maximumValue`.
 
-### randomFloat(min, max)
+### randomFloat(minimumValue, maximumValue)
 
-Returns an float from `min` to `max`.
+Returns an float from `minimumValue` to `maximumValue`.
 
-#### min
+#### minimumValue
 
-Type: `number`  
+Type: `number`
 Default: `0`
 
 Minimum float to return.
 
-#### max
+#### maximumValue
 
-Type: `number`  
+Type: `number`
 Default: `1`
 
 Maximum float to return.
