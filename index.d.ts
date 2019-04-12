@@ -1,9 +1,9 @@
 /**
 Generate a random [float](https://en.wikipedia.org/wiki/Floating_point).
 
-@param minimumValue - Minimum float to return. Default: `1`.
-@param maximumValue - Maximum float to return. Default: `1`.
-@returns A float from `minimumValue` to `maximumValue`.
+@param minimum - Minimum float to return. Default: `1`.
+@param maximum - Maximum float to return. Default: `1`.
+@returns A float from `minimum` to `maximum`.
 
 @example
 ```
@@ -16,10 +16,7 @@ randomFloat(10, 100);
 //=> 72.34217455144972
 ```
 */
-declare function randomFloat(maximumValue?: number): number;
-declare function randomFloat(
-	minimumValue: number,
-	maximumValue: number
-): number;
+declare function randomFloat(maximum?: number): number;
+declare function randomFloat(minimum: number, maximum: number): number;
 
 export = randomFloat;

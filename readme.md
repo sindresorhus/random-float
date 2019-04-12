@@ -25,22 +25,22 @@ randomFloat(10, 100);
 
 ## API
 
-### randomFloat([maximumValue])
+### randomFloat([maximum])
 
-Returns an float from `0` to `maximumValue`.
+Returns an float from `0` to `maximum`.
 
-### randomFloat(minimumValue, maximumValue)
+### randomFloat(minimum, maximum)
 
-Returns an float from `minimumValue` to `maximumValue`.
+Returns an float from `minimum` to `maximum`.
 
-#### minimumValue
+#### minimum
 
 Type: `number`
 Default: `0`
 
 Minimum float to return.
 
-#### maximumValue
+#### maximum
 
 Type: `number`
 Default: `1`
