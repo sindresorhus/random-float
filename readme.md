@@ -1,14 +1,12 @@
-# random-float [![Build Status](https://travis-ci.org/sindresorhus/random-float.svg?branch=master)](https://travis-ci.org/sindresorhus/random-float)
+# random-float [![Build Status](https://travis-ci.com/sindresorhus/random-float.svg?branch=master)](https://travis-ci.com/sindresorhus/random-float)
 
 > Generate a random [float](https://en.wikipedia.org/wiki/Floating_point)
-
 
 ## Install
 
 ```
 $ npm install random-float
 ```
-
 
 ## Usage
 
@@ -22,10 +20,9 @@ randomFloat(10, 100);
 //=> 72.34217455144972
 ```
 
-
 ## API
 
-### randomFloat([maximum])
+### randomFloat(maximum?)
 
 Returns an float from `0` to `maximum`.
 
@@ -35,18 +32,17 @@ Returns an float from `minimum` to `maximum`.
 
 #### minimum
 
-Type: `number`
+Type: `number`\
 Default: `0`
 
 Minimum float to return.
 
 #### maximum
 
-Type: `number`
+Type: `number`\
 Default: `1`
 
 Maximum float to return.
-
 
 ## Related
 
@@ -58,8 +54,3 @@ Maximum float to return.
 - [unique-random](https://github.com/sindresorhus/unique-random) - Generate random numbers that are consecutively unique
 - [unique-random-array](https://github.com/sindresorhus/unique-random-array) - Get consecutively unique elements from an array
 - [crypto-random-string](https://github.com/sindresorhus/crypto-random-string) - Generate a cryptographically strong random string
-
-
-## License
-
-MIT © [Sindre Sorhus](http://sindresorhus.com)

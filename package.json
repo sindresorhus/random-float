@@ -4,10 +4,11 @@
 	"description": "Generate a random float",
 	"license": "MIT",
 	"repository": "sindresorhus/random-float",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"engines": {
 		"node": ">=8"
