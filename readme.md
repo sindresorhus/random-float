@@ -1,4 +1,4 @@
-# random-float [![Build Status](https://travis-ci.com/sindresorhus/random-float.svg?branch=master)](https://travis-ci.com/sindresorhus/random-float)
+# random-float
 
 > Generate a random [float](https://en.wikipedia.org/wiki/Floating_point)
 
