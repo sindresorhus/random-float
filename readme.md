@@ -11,7 +11,7 @@ $ npm install random-float
 ## Usage
 
 ```js
-const randomFloat = require('random-float');
+import randomFloat from 'random-float';
 
 randomFloat(5);
 //=> 4.401887938147411

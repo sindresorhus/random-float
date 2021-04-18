@@ -1,3 +1,5 @@
+/* eslint-disable import/export */
+
 /**
 Generate a random [float](https://en.wikipedia.org/wiki/Floating_point).
 
@@ -7,7 +9,7 @@ Generate a random [float](https://en.wikipedia.org/wiki/Floating_point).
 
 @example
 ```
-import randomFloat = require('random-float');
+import randomFloat from 'random-float';
 
 randomFloat(5);
 //=> 4.401887938147411
@@ -16,7 +18,5 @@ randomFloat(10, 100);
 //=> 72.34217455144972
 ```
 */
-declare function randomFloat(maximum?: number): number;
-declare function randomFloat(minimum: number, maximum: number): number;
-
-export = randomFloat;
+export default function randomFloat(maximum?: number): number;
+export default function randomFloat(minimum: number, maximum: number): number; // eslint-disable-line @typescript-eslint/unified-signatures

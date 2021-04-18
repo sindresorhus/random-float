@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = (minimum, maximum) => {
+export default function randomFloat(minimum, maximum) {
 	if (maximum === undefined) {
 		maximum = minimum;
 		minimum = 0;
@@ -11,4 +9,4 @@ module.exports = (minimum, maximum) => {
 	}
 
 	return (Math.random() * (maximum - minimum)) + minimum;
-};
+}

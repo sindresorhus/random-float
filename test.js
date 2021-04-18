@@ -2,7 +2,7 @@ import test from 'ava';
 import numberIsFloat from 'number-is-float';
 import inRange from 'in-range';
 import stableFn from 'stable-fn';
-import randomFloat from '.';
+import randomFloat from './index.js';
 
 const inRangeCheck = ({start, end}) => stableFn(() => inRange(randomFloat(start, end), {start, end}));
 

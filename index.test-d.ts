@@ -1,5 +1,5 @@
 import {expectType} from 'tsd';
-import randomFloat = require('.');
+import randomFloat from './index.js';
 
 expectType<number>(randomFloat());
 expectType<number>(randomFloat(5));
